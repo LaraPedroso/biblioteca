@@ -9,7 +9,7 @@ export const styles = StyleSheet.create({
   label: {
     color: THEME.COLORS.CAPTION_300,
     fontSize: THEME.FONT_SIZE.SM,
-    fontFamily: THEME.FONT_FAMILY.REGULAR,
+    fontFamily: 'Roboto Bold',
     marginBottom: 4,
   },
   value: {

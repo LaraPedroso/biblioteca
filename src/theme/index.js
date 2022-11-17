@@ -1,3 +1,5 @@
+// import {styles} from '../global/fonts/fonts';
+
 export const THEME = {
   COLORS: {
     BACKGROUND_900: '#121214',
@@ -22,7 +24,7 @@ export const THEME = {
   FONT_FAMILY: {
     REGULAR: 'Inter_400Regular',
     SEMI_BOLD: 'Inter_600SemiBold',
-    BOLD: 'Inter_700Bold',
+    BOLD: 'Roboto Bold',
     BLACK: 'Inter_900Black',
   },
 

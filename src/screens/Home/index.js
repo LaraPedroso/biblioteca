@@ -1,5 +1,5 @@
 import React from 'react';
-import {Image, FlatList} from 'react-native';
+import {Image, FlatList, TouchableOpacity, Text} from 'react-native';
 import {SafeAreaView} from 'react-native-safe-area-context';
 import logoImg from '../../assets/logoBook3.png';
 import {BookCard} from '../../components/BookCard';
@@ -12,13 +12,18 @@ import {styles} from './styles';
 export function Home() {
   const navigation = useNavigation();
 
-  function handleOpenBook({id, name, img}) {
-    navigation.navigate('book', {id, name, img});
+  function handleOpenBook({id, name, img, describe, autor}) {
+    navigation.navigate('book', {id, name, img, describe, autor});
   }
-
+  function handleLogin() {
+    navigation.navigate('login');
+  }
   return (
     <Background>
       <SafeAreaView style={styles.container}>
+        <TouchableOpacity style={styles.login} onPress={handleLogin}>
+          <Text>Login</Text>
+        </TouchableOpacity>
         <Image source={logoImg} style={styles.logo} />
         <Heading
           title="Encontre seu Livro"

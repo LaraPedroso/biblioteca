@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React from 'react';
 
 import {Image, Text, TouchableOpacity, View} from 'react-native';
 import {SafeAreaView} from 'react-native-safe-area-context';
@@ -10,7 +10,7 @@ import {styles} from './styles';
 import logoImg from '../../assets/logoBook3.png';
 import {Heading} from '../../components/Heading';
 import {DuoCard} from '../../components/DuoCard';
-
+import Icon from 'react-native-vector-icons/Feather';
 export function Book() {
   // const [duos, setDuos] = useState()
   const route = useRoute();
@@ -26,12 +26,12 @@ export function Book() {
   //   .then(response => response.json())
   //   .then(data => setDuos())
   // });
-
   return (
     <Background>
       <SafeAreaView style={styles.container}>
         <View style={styles.header}>
           <TouchableOpacity onPress={handleGoBack}>
+            <Icon name="arrow-left" size={60} color="white" />
             <Text>Voltar</Text>
           </TouchableOpacity>
           <Image source={logoImg} style={styles.logo} />

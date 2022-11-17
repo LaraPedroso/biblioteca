@@ -13,14 +13,13 @@ export const BookS = [
     ads: '3',
     autor: 'lorem-2',
     img: require('../assets/books/acaba.png'),
-    describe: 'lorem-',
+    describe: 'Ea commodo est magna est aliqua aliqua irure.',
   },
   {
     id: '3',
     name: 'Magalina',
     ads: '2',
     autor: 'lorem-2',
-
     img: require('../assets/books/mag.png'),
     describe: 'lorem-',
   },
