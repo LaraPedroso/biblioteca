@@ -21,4 +21,10 @@ export const styles = StyleSheet.create({
     width: 30,
     height: 30,
   },
+  img: {
+    width: 311,
+    height: 160,
+    borderRadius: 5,
+    marginTop: 32,
+  },
 });

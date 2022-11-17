@@ -9,6 +9,7 @@
     "test": "jest",
     "lint": "eslint ."
   },
+  "proxy": "http://localhost:3001/api",
   "dependencies": {
     "@react-native-material/core": "^1.3.7",
     "@react-navigation/native": "^6.0.13",
