@@ -7,10 +7,11 @@ export const styles = StyleSheet.create({
     marginBottom: 16,
   },
   label: {
+    fontSize: 17,
+    fontWeight: 'bold',
     color: THEME.COLORS.CAPTION_300,
-    fontSize: THEME.FONT_SIZE.SM,
     fontFamily: 'Roboto Bold',
-    marginBottom: 4,
+    marginBottom: 2,
   },
   value: {
     color: THEME.COLORS.CAPTION_300,

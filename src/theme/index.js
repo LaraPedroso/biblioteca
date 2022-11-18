@@ -33,4 +33,5 @@ export const THEME = {
     MD: 16,
     LG: 24,
   },
+  iconImg: {},
 };

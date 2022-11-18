@@ -2,13 +2,12 @@ import {StyleSheet} from 'react-native';
 
 export const styles = StyleSheet.create({
   container: {
-    flex: 1,
     alignItems: 'center',
   },
   logo: {
     width: 214,
     height: 120,
-    marginTop: 90,
+    marginTop: 50,
     marginBottom: 15,
   },
   contenList: {
@@ -19,5 +18,12 @@ export const styles = StyleSheet.create({
     marginLeft: 5,
     backgroundColor: 'white',
     alignItems: 'flex-end',
+  },
+  buttons: {
+    backgroundColor: '#291E43',
+    padding: 2,
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'flex-end',
   },
 });
