@@ -9,13 +9,14 @@ import {
   Animated,
 } from 'react-native';
 import {Background} from '../../components/Background';
-import {styles} from './styles';
+import {styles} from '../../global/theme/styles';
 import logoImg from '../../assets/logoBook3.png';
+import {useNavigation} from '@react-navigation/native';
 
 // import {ButtonBack} from '../../components/ButtonBack';
 export function Login() {
   const [offset] = useState(new Animated.ValueXY({x: 0, y: 80}));
-
+  const navigation = useNavigation();
   useEffect(() => {
     Animated.spring(offset.y, {
       toValue: 0,
@@ -24,6 +25,9 @@ export function Login() {
       useNativeDriver: true,
     }).start();
   });
+  function handleRegister() {
+    navigation.navigate('register');
+  }
   return (
     <Background>
       {/* <View style={styles.btnBack}>
@@ -50,7 +54,7 @@ export function Login() {
           <TouchableOpacity style={styles.btnSubmit}>
             <Text style={styles.btntext}>Acessar</Text>
           </TouchableOpacity>
-          <TouchableOpacity style={styles.btnRegister}>
+          <TouchableOpacity style={styles.btnRegister} onPress={handleRegister}>
             <Text style={styles.textRegister}>Registrar-se</Text>
           </TouchableOpacity>
         </Animated.View>

@@ -20,8 +20,7 @@ export function DuoCard({data}) {
       <DuoInfo label="Descrição: " value={data.describe} />
       <ButtonCustom
         onPress={handleOpenPageRead}
-        title="Começar a ler ..."
-        style={{margin: 5}}
+        title="Clica aqui para começar a ler ..."
       />
     </View>
   );
